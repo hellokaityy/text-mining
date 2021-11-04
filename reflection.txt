@@ -1,0 +1,34 @@
+**1. Project Overview** [~1 paragraph]
+What data source(s) did you use and what technique(s) did you use analyze/process them? What did you hope to learn/create?
+
+I wanted to analyze two political articles that talked about the same thing. I chose the storming of the capitol articles from back earlier this year. I chose to analyze how CBS and Fox news looked at this situation and reported on it, as CBS is known for being very liberal and Fox for siding with conseravatives. I used the natural language as well as the word count in the hopes of seeing if there was any negative or positive bias and which words were used most frequently. 
+
+**2. Implementation** [~2-3 paragraphs]
+Describe your implementation at a system architecture level. You should NOT walk through your code line by line, or explain every function (we can get that from your docstrings). Instead, talk about the major components, algorithms, data structures and how they fit together. You should also discuss at least one design decision where you had to choose between multiple alternatives, and explain why you made the choice you did.
+
+I utilized the nltk to look at the natural language output. I downloaded and got this code from the resources provided in the instructions. I actually analyzed a couple of different articles and made up my own sentences to test to see how it worked and found it quite interesting!
+The other algorithms I used were compiling the article text into a dictionary and doing a word count for each word.
+I attempted to get rid of filler words and to also sort the dictionary by the total word counts but was somewhat unsuccessful. 
+At first, I made several different functions each catering to the CBS or Fox article. I then realized it as getting very convoluted and I was able to generalize the functions and make it into one function. 
+
+
+**3. Results** [~2-3 paragraphs + figures/examples]
+Present what you accomplished:
+
+- If you did some text analysis, what interesting things did you find? Graphs or other visualizations may be very useful here for showing your results.
+- If you created a program that does something interesting (e.g. a Markov text synthesizer), be sure to provide a few interesting examples of the program's output.
+
+I found that the nltk compared the articles almost equally in terms of negative/positive correlations, which I suppose is good considering they are news articles and meant to be unbiased. 
+The news for CBS score is: {'neg': 0.195, 'neu': 0.746, 'pos': 0.059, 'compound': -0.9894}
+The news for Fox score is: {'neg': 0.108, 'neu': 0.805, 'pos': 0.088, 'compound': -0.9901}
+
+if anything, the CBS article uses more negative words and fewer positive words whereas the Fox one uses more positive and fewer negative, potentially shedding light on the conservative/democrative bias, but certainly not enough to be making accusations of bias. I had a hard time sorting the words, but from skimming through and looking, Fox news used the name Trump and "commander in chief" much more than the CBS article which used more phrases like "attack" and "charged".
+
+
+**4. Reflection** [~1 paragraph]
+From a process point of view, what went well? What could you improve? Other possible reflection topics: Was your project appropriately scoped? Did you have a good plan for testing? How will you use what you learned going forward? What do you wish you knew before you started that would have helped you succeed?
+
+If I were to do this again, I'd hopefully like to get my sorting code working to have a better and more thorough analysis. I think it would be interesting if I could compare 100/1000s of articles from multiple different news sources to see if any have long term bias. I think I had a good plan, I was just having a difficult time fully analyzing all the text, but I definitely learned a lot from this project and know that I will probably tinker some more with the code to see if I can perfect and further analyze. The trial and error and openendedness of this project will definitely help me in future projects and the mindset is something that I will carry with me going forward. 
+
+~~Also discuss your team process in your reflection. How did you plan to divide the work (e.g. split by task, always pair program together, etc.) and how did it actually happen? Were there any issues that arose while working together, and how did you address them? What would you do differently next time?~~
+I did this project by myself
