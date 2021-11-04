@@ -17,6 +17,7 @@ Foxtext = articleFox.text
 stopWords = ['a','the','and','an','this','how','why','would','could','For','The']
 
 def analyze(articleText, name):
+    """takes an article and puts it through the natural language tool kit while also performing a word count and returning a dictionary"""
     score = SentimentIntensityAnalyzer().polarity_scores(articleText)
     print(f'The news for {name} score is: {score}')
 
@@ -37,11 +38,11 @@ def analyze(articleText, name):
 
 
 
-def sortlist(totalFreq):
-    sorted = [(totalFreq[1], key) for key in totalFreq]
-    sorted.sort()
+# def sortlist(totalFreq):
+#     sorted = [(totalFreq[1], key) for key in totalFreq]
+#     sorted.sort()
 
-    return sorted
+#     return sorted
 
 
 
